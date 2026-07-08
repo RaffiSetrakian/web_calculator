@@ -41,5 +41,4 @@ jobs:
       - name: Qodana Scan
         uses: JetBrains/qodana-action@v2026.1
         env:
-          QODANA_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0IjoiUTJvbnIiLCJvcmdhbml6YXRpb24iOiJRTTliayIsInRva2VuIjoiVlBqb2UiLCJleHAiOjE3ODQxMTIzODh9.gcr2bRTX-7faHx9zdM3oOweyTbQN3kBJ-AWfODVoViE"
-          QODANA_ENDPOINT: 'https://web.cloud.sssa-qa.aws.intellij.net'
+          QODANA_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0IjoiUTZSMlEiLCJvcmdhbml6YXRpb24iOiJRNjlRRCIsInRva2VuIjoiNVpZWG4ifQ.cbpDnfiNEYkTZXqEf9Gm2J4ubIjbtkU2fvplIEQZ0ZA"
