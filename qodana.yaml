@@ -1,9 +1,10 @@
+####################################################################################################################
+# WARNING: Do not store sensitive information in this file, as its contents will be included in the Qodana report. #
+####################################################################################################################
+
 version: "1.0"
-linter: jetbrains/qodana-js:2026.2-eap
-
-bootstrap: mkdir -p .qodana/code-coverage && cp coverage/lcov.info .qodana/code-coverage/lcov.info
-
-coverage:
-  reportProblems: true
-  codeCoverageLocations:
-    - ".qodana/code-coverage"
+linter: qodana-jvm
+profile:
+  name: qodana.recommended
+include:
+  - name: CheckDependencyLicenses
