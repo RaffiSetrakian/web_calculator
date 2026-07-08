@@ -1,0 +1,9 @@
+version: "1.0"
+linter: registry.jetbrains.team/p/sa/containers/qodana-js:2026.2-eap-rc
+
+bootstrap: mkdir -p .qodana/code-coverage && cp coverage/lcov.info .qodana/code-coverage/lcov.info
+
+coverage:
+  reportProblems: true
+  codeCoverageLocations:
+    - ".qodana/code-coverage"

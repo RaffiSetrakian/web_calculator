@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c1ea1b7c-a596-4bcd-9cc6-eb128b8a846e" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;inesaaaa&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/inesaaaa/web_calculator.git",
+    "accountId": "53f5fb0f-6c1f-4390-afe9-e9a4a0d47b4a"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2sfA6vUpyUGPGvTQFGxOxXkVmm4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.qodana",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="QodanaHighlightedReportService">
+    <option name="localRunNotPublishedPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="/private/var/folders/9z/hx37wpqx0y1ggq992vs2lrsr0000gp/T/qodana_output9/qodana.sarif.json" />
+        <option name="reportGuid" value="fd76790c-d0fe-40dc-8f47-90399feadc38" />
+        <option name="reportName" value="web_calculator/qodana/2026-07-07" />
+      </LocalReportPersistedInfo>
+    </option>
+  </component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="/private/var/folders/9z/hx37wpqx0y1ggq992vs2lrsr0000gp/T/qodana_output9/qodana.sarif.json" reportGuid="fd76790c-d0fe-40dc-8f47-90399feadc38" reportId="web_calculator/qodana/2026-07-07" />
+      <ReportDescription localRun="true" path="/private/var/folders/9z/hx37wpqx0y1ggq992vs2lrsr0000gp/T/qodana_output1/qodana.sarif.json" reportGuid="9d421bc9-9e6a-428a-997f-9b57d1a7ba63" reportId="web_calculator/qodana/2026-07-07" />
+      <ReportDescription localRun="true" path="/private/var/folders/9z/hx37wpqx0y1ggq992vs2lrsr0000gp/T/qodana_output2/qodana.sarif.json" reportGuid="519762f7-7880-4f42-a8da-488b0e092cac" reportId="web_calculator/qodana/2026-07-07" />
+      <ReportDescription localRun="true" path="/private/var/folders/9z/hx37wpqx0y1ggq992vs2lrsr0000gp/T/qodana_output4/qodana.sarif.json" reportGuid="0814b794-9fb6-42e8-894a-3bc4646dc45b" reportId="web_calculator/qodana/2026-07-07" />
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.qodana/code-coverage" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1ea1b7c-a596-4bcd-9cc6-eb128b8a846e" name="Changes" comment="" />
+      <created>1738833931555</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738833931555</updated>
+      <workItem from="1738833932635" duration="3491000" />
+      <workItem from="1738837889570" duration="2204000" />
+      <workItem from="1758122482731" duration="203000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
