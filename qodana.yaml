@@ -1,5 +1,5 @@
 version: "1.0"
-linter: qodana-js:2026.2-EAP
+linter: jetbrains/qodana-js:2026.2-eap
 
 bootstrap: mkdir -p .qodana/code-coverage && cp coverage/lcov.info .qodana/code-coverage/lcov.info
 
