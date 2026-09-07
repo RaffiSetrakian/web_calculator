@@ -3,7 +3,9 @@
 ####################################################################################################################
 version: "1.0"
 linter: qodana-jvm
-profile:
-  name: qodana.recommended
-include:
-  - name: CheckDependencyLicenses
+
+coverage:
+  reportProblems: true # Enable code coverage
+  codeCoverageLocations:
+    - "custom-directory-1"
+    - "custom-directory-2"
