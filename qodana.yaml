@@ -5,7 +5,10 @@ version: "1.0"
 linter: qodana-jvm
 
 coverage:
+  paths:
+    - coverage
   reportProblems: true # Enable code coverage
   codeCoverageLocations:
     - "custom-directory-1"
     - "custom-directory-2"
+ 
