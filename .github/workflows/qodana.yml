@@ -42,4 +42,4 @@ jobs:
         uses: JetBrains/qodana-action@v2026.1
         env:
           QODANA_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0IjoiZ2xtblciLCJvcmdhbml6YXRpb24iOiJwYnpaUCIsInRva2VuIjoiVmpvblkifQ.RjGNymWttdDI8MrHZwJmZvZdl3wZJTszXpHvQ_srvK0"
-          QODANA_ENDPOINT: "https://web.cloud.sssa-stgn.aws.intellij.net/projects/glmnW/reports/7w4ew?showingBaseline=C4JwrgpkA"
+          QODANA_ENDPOINT: 'https://web.cloud.sssa-stgn.aws.intellij.net'
