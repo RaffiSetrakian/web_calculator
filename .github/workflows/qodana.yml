@@ -36,7 +36,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: coverage-report
-          path: coverage
+          path: coverage/
+          if-no-files-found: error
 
       - name: Qodana Scan
         uses: JetBrains/qodana-action@v2026.1
