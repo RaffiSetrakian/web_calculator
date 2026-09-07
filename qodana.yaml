@@ -8,5 +8,6 @@ coverage:
   codeCoverageLocations:
     - ".qodana/code-coverage"
 
-testCoverageThresholds:
-  total: 70
+failureConditions:
+  testCoverageThresholds:
+    fresh: 65
