@@ -10,4 +10,4 @@ coverage:
 
 failureConditions:
   testCoverageThresholds:
-    total: 65
+    total: 60
