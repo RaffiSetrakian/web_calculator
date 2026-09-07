@@ -10,4 +10,4 @@ coverage:
 
 failureConditions:
   testCoverageThresholds:
-    fresh: 65
+    total: 65
