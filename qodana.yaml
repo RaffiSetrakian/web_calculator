@@ -7,3 +7,6 @@ coverage:
   reportProblems: true
   codeCoverageLocations:
     - ".qodana/code-coverage"
+
+testCoverageThresholds:
+  total: 70
