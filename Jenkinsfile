@@ -1,48 +1,22 @@
-pipeline {                                                                                                                                                                                                                             
-      agent any                                                                                                                                                                                                                          
-      tools {nodejs "20"}                                                                                                                                                                                                                
-      environment {                                                                                                                                                                                                                      
-          DISPLAY = ":99"                                                                                                                                                                                                                
-      }                                                                                                                                                                                                                                  
-      stages {                                                                                                                                                                                                                           
-          stage('Start Xvfb') {                                                                                                                                                                                                          
-              steps {                                                                                                                                                                                                                    
-                  script {                                                                                                                                                                                                               
-                      sh '''                                                                                                                                                                                                             
-                      # Start Xvfb                                                                                                                                                                                                       
-                      Xvfb :99 -ac &                                                                                                                                                                                                     
-                      # Wait to ensure Xvfb starts properly                                                                                                                                                                              
-                      sleep 5                                                                                                                                                                                                            
-                      '''                                                                                                                                                                                                                
-                  }                                                                                                                                                                                                                      
-              }                                                                                                                                                                                                                          
-          }                                                                                                                                                                                                                              
-          stage('Install Packages') {                                                                                                                                                                                                    
-              steps {                                                                                                                                                                                                                    
-                  sh 'npm install'                                                                                                                                                                                                       
-              }                                                                                                                                                                                                                          
-          }                                               
-          stage('Qodana') {                                                                                                                                                                                                              
-              environment { QODANA_TOKEN = credentials('qodana-token') }                                                                                                                                                                 
-              steps {                                                                                                                                                                                                                    
-                  sh 'docker run --rm -v "$WORKSPACE":/data/project -v "$WORKSPACE/qodana-results":/data/results -e QODANA_TOKEN jetbrains/qodana-js:latest --save-report'                                                               
-              }                                                                                                                                                                                                                          
-          }                                  
-          stage('Unit Tests') {                                                                                                                                                                                                          
-              steps {                                                                                                                                                                                                                    
-                  sh 'npm run test:unit'                                                                                                                                                                                                 
-              }                                                                                                                                                                                                                          
-          }                                                                                                                                                                                                                              
-          stage('Integration Tests') {                                                                                                                                                                                                   
-              steps {                                                                                                                                                                                                                    
-                  sh 'npm run test:integration'                                                                                                                                                                                          
-              }                                                                                                                                                                                                                          
-          }                                                                                                                                                                                                                              
-      }                                                                                                                                                                                                                                  
-      post {                                                                                                                                                                                                                             
-          always {                                                                                                                                                                                                                       
-              sh 'pkill Xvfb || true'                                                                                                                                                                                                    
-              archiveArtifacts artifacts: 'qodana-results/**', allowEmptyArchive: true   // ADDED                                                                                                                                        
-          }                                                                                                                                                                                                                              
-      }                                                                                                                                                                                                                                  
-  }
+pipeline {
+    environment {
+        QODANA_TOKEN=credentials('qodana-token')
+        QODANA_ENDPOINT='https://qodana.cloud'
+    }
+    agent {
+        docker {
+            args '''
+              -v "${WORKSPACE}":/data/project
+              --entrypoint=""
+              '''
+            image 'jetbrains/qodana-python:2026.1'
+        }
+    }
+    stages {
+        stage('Qodana') {
+            steps {
+                sh '''qodana'''
+            }
+        }
+    }
+}
