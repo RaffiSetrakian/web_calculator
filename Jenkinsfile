@@ -9,7 +9,7 @@ pipeline {
               -v "${WORKSPACE}":/data/project
               --entrypoint=""
               '''
-            image 'jetbrains/qodana-python:2026.1'
+            image 'jetbrains/qodana-jvm:2026.1'
         }
     }
     stages {
