@@ -1,22 +1,18 @@
-pipeline {
-    environment {
-        QODANA_TOKEN=credentials('qodana-token')
-        QODANA_ENDPOINT='https://qodana.cloud'
-    }
-    agent {
-        docker {
-            args '''
-              -v "${WORKSPACE}":/data/project
-              --entrypoint=""
-              '''
-            image 'jetbrains/qodana-jvm:2026.1'
-        }
-    }
-    stages {
-        stage('Qodana') {
-            steps {
-                sh '''qodana'''
-            }
-        }
-    }
-}
+ pipeline {                                                                                                                                                                                                                             
+      agent any                                                                                                                                                                                                                          
+      environment {                                                                                                                                                                                                                      
+          QODANA_TOKEN = credentials('qodana-token')                                                                                                                                                                                     
+      }                                                                                                                                                                                                                                  
+      stages {                                                                                                                                                                                                                           
+          stage('Qodana') {                                                                                                                                                                                                              
+              steps {                                                                                                                                                                                                                    
+                  sh 'docker run --rm -v "$WORKSPACE":/data/project -v "$WORKSPACE/qodana-results":/data/results -e QODANA_TOKEN jetbrains/qodana-js:2026.1 --save-report'                                                               
+              }                                                                                                                                                                                                                          
+          }                                                                                                                                                                                                                              
+      }                                                                                                                                                                                                                                  
+      post {                                                                                                                                                                                                                             
+          always {                                                                                                                                                                                                                       
+              archiveArtifacts artifacts: 'qodana-results/**', allowEmptyArchive: true                                                                                                                                                   
+          }                                                                                                                                                                                                                              
+      }                                                                                                                                                                                                                                  
+  }
